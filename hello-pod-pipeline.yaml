@@ -16,7 +16,7 @@ metadata:
 spec:
   source:
     git:
-      uri: "https://github.com/alexedward224/Pipeline-Yamls"
+      uri: "https://github.com/alexedward224/Hello-Pod"
   strategy:
     jenkinsPipelineStrategy:
       jenkinsfilePath: "Jenkinsfile"
