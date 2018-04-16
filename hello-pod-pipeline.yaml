@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: "m2repo"
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+---
+kind: "BuildConfig"
+apiVersion: "v1"
+metadata:
+  name: "hello-pod-pipeline"
+spec:
+  source:
+    git:
+      uri: "https://github.com/alexedward224/Pipeline-Yamls"
+  strategy:
+    jenkinsPipelineStrategy:
+      jenkinsfilePath: "Jenkinsfile"
