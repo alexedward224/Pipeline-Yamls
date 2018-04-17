@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: "m2repo"
+  name: "m3repo"
 spec:
   accessModes:
     - ReadWriteOnce
